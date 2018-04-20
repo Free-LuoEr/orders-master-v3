@@ -31,7 +31,7 @@ public class CustomerCommandHandler {
     ReserveCreditCommand cmd = cm.getCommand();
     long customerId = cmd.getCustomerId();
     
-    if£¨customerId>=2 && customerId <= 3£©
+    if((customerId>=2) && (customerId <= 3))
 		{
    		customerId = customerId -1;
 		}

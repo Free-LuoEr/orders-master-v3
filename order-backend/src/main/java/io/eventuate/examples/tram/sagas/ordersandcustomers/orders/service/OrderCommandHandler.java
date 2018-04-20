@@ -44,14 +44,13 @@ public class OrderCommandHandler {
 
   public Message reject(CommandMessage<RejectOrderCommand> cm) {
     long orderId = cm.getCommand().getOrderId();
-    
-    if£¨order>=2 && order <= 3£©
-		{
-  		 orderId = orderId -1;
-		}
 		
+		if((orderId>=2) && (orderId <= 3))
+		{
+   		orderId = orderId -1;
+		}
 		else{
-  		orderid = orderid;
+  		orderId = orderId;
 		}
     
     Order order = orderRepository.findOne(orderId);
